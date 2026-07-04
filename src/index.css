@@ -1,1 +1,41 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --bg-base: #10161f;
+  --bg-panel: #161d29;
+  --paper: #f4efe2;
+  --accent: #ff6a39;
+  --accent-dim: #c8531f;
+  --ink: #eae6da;
+  --ink-muted: #8b95a3;
+  --line: #2a3341;
+  --ok: #3ecf8e;
+}
+
+body {
+  background-color: var(--bg-base);
+  font-family: 'Inter', sans-serif;
+  color: var(--ink);
+}
+
+.font-display {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-mono {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/* subtle blueprint grid backdrop */
+.blueprint-grid {
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.035) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+::selection {
+  background: var(--accent);
+  color: #10161f;
+}

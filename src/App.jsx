@@ -39,7 +39,7 @@ const App = () => {
   const categories = ["All", ...new Set(handphones.map(hp => hp.category))];
 
   return (
-    <div className="bg-[#fff8e7] min-h-screen flex flex-col">
+    <div className="bg-[#10161f] blueprint-grid min-h-screen flex flex-col">
       <Header
         cartCount={cartCount}
         searchQuery={searchQuery}
